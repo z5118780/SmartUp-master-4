@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showSignUpDialog() {
-        //AlertDialog.Builder_alertDialog = new AlertDialog.Builder(MainActivity.this);
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
         alertDialog.setTitle("Sign Up");
         alertDialog.setMessage("Please fill in the full information");
