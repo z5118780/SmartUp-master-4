@@ -15,22 +15,23 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
-    /*   //INITIATE VIEW'S
+     /*  //INITIATE VIEW'S
 
        ImageButton quizbtn = (ImageButton) findViewById(R.id.quiz_icon);
-       ImageButton resourcebtn = (ImageButton) findViewById(R.id.resource_icon);
-
+       *//*ImageButton resourcebtn = (ImageButton) findViewById(R.id.resource_icon);
+*//*
 
        //perform click event on button's
 
        quizbtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent quiz = onNewIntent(MainActivity.this, quizactivity.class);
+               Intent quiz = onNewIntent(Home.this, Quiz.class);
                startActivity(quiz);
            }
        });
 
+*//*
 
        resourcebtn.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -40,9 +41,9 @@ public class Home extends AppCompatActivity {
            }
        });
 
-
-
+*//*
 */
+
 
     }
 }
