@@ -77,11 +77,14 @@ public class MainActivity extends AppCompatActivity {
                         User login = dataSnapshot.child(user).getValue(User.class);
                         if (login.getPassword().equals(pwd))
 
-                           // Toast.makeText(MainActivity.this, "Login ok! ", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(MainActivity.this, "Login ok! ", Toast.LENGTH_SHORT).show();
+
                         {
-                            Intent homeActivity=new Intent(MainActivity.this,Home.class);
+                            startActivity(new Intent("com.example.jennwong.smartup.Home"));
+
+                           /* Intent homeActivity = new Intent(MainActivity.this, Home.class);
                             startActivity(homeActivity);
-                            finish();
+                            finish();*/
                         }
 
                         else
