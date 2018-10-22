@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     MaterialEditText edtUser, edtPassword; //for sign in;
 
 
-    Button btn_sign_up, btn_sign_in;
+    Button btnsignup, btnsignin;
 
     FirebaseDatabase database;
     DatabaseReference users;
@@ -45,18 +45,18 @@ public class MainActivity extends AppCompatActivity {
         edtUser = (MaterialEditText) findViewById(R.id.edtUser);
         edtPassword = (MaterialEditText) findViewById(R.id.edtPassword);
 
-        btn_sign_in = (Button) findViewById(R.id.btn_sign_in);
-        btn_sign_up = (Button) findViewById(R.id.btn_sign_up);
+        btnsignin = (Button) findViewById(R.id.btn_sign_in);
+        btnsignup = (Button) findViewById(R.id.btn_sign_up);
 
 
-       btn_sign_up.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               showSignUpDialog();
-           }
-       });
+        btnsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showSignUpDialog();
+            }
+        });
 
-        btn_sign_in.setOnClickListener(new View.OnClickListener() {
+        btnsignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signin(edtUser.getText().toString(),edtPassword.getText().toString());
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     else
-                        {
+                    {
                         Toast.makeText(MainActivity.this, "Please enter your user name", Toast.LENGTH_SHORT).show();
 
                     }
